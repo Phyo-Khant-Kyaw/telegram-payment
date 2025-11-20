@@ -1,4 +1,8 @@
 const express = require("express");
+const TelegramBot = require('node-telegram-bot-api');
+const encode = require('jwt-encode');
+const axios = require('axios');
+const jwtDecode = require('jwt-decode');
 const app = express();
 const port = 3000;
 
