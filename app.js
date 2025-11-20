@@ -6,10 +6,10 @@ const { jwtDecode } = require("jwt-decode");
 const app = express();
 const port = 3000;
 
-const BOT_TOKEN = process.env.BOT_TOKEN || "8485618565:AAFiQgag0qDq-L_FarfJkgfejk4E-RpfYQA";
-const MERCHANT_ID = process.env.MERCHANT_ID || "MPSSD0000000083";
-const SECRET_KEY = process.env.SECRET_KEY || "q8zL1hqwOocl9tVjhYJo9RilpaDiL-c5p8Yh52nn8tE";
-const API_URL = process.env.API_URL || "https://test.octoverse.com.mm/api/payment/auth/token";
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const MERCHANT_ID = process.env.MERCHANT_ID;
+const SECRET_KEY = process.env.SECRET_KEY;
+const API_URL = process.env.API_URL;
 
 const PRICE_OPTIONS = [1500, 3000, 5000, 10000];
 
